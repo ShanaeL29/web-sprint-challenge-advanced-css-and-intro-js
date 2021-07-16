@@ -24,23 +24,25 @@ Please answer the following questions below, you may edit the readme file to inc
 
 1. How would you describe acessibility on the web to someone new to programming?
     
-    answer here
+    I would describe accessibility as being made with all user types in mind including users with permanent or temporary disabilities, users with limited internet connection, users who are older and not as tech advanced, or users on several different screen sizes, and any other user categories as well.
 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
 
-    answer here
+    To make sure your website is accessible you can make sure your images have alt attributes descibing the image, you can make sure your elements are as semantic as possible, you can make sure that your websites colors take into account color-blind users, and you can add also ARIA attributes to your page.
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-    answer here
+    I would tell them that a variable is a way to store data. Variables are like labels for values. We store(declare) the value with a name and we can refer back to it later, we can use it to do stuff, or we can change it in certain instances. There are 3 types of variables known as var, let, and const. Var can be reassigned and redeclared and is the variable used in older versions. Let is a variable that can be reassigned but can not be redeclared and it was made to solve the issues that var posed. Const is a variable that can be neithe reassigned nor redeclared as it remains constant. It is good to use const until you can't and then use let instead. We should stay away from var. Var is function scoped while let and const are block scoped.
 
 4. What is the purpose of using functions in code?
 
-    answer here
+    The purpose of using functions in code is to be able to perform a related action without having to write it out multiple times. With a function we can plug arguments into the functions parameters and log the result then plug in different arguments over and over with just a few lines of code. Functions are reuseable and much more efficient.
+    
 
 5. How do you access a key inside of an object inside of an array?
 
-    answer here
+    You give the name of the array, followed by the index the object is positioned at inside the array. This index should be inside of square brackets.You then use the dot or bracket notation with the key name. It would look along the lines of:
+    arrayName[indexOfObjectPosition].objectKeyName
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
