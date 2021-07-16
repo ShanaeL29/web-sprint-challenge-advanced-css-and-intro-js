@@ -36,7 +36,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 4. What is the purpose of using functions in code?
 
-    The purpose of using functions in code is to be able to perform a related action without having to write it out multiple times. With a function we can plug arguments into the functions parameters and log the result then plug in different arguments over and over with just a few lines of code. Functions are reuseable and much more efficient.
+    Functions protect a block of code until the function is invoked. Functions make it possible to be able to perform a related action without having to write it out multiple times. With a function we can plug arguments into the functions parameters and log the result then plug in different arguments over and over with just a few lines of code. Functions are reuseable and much more efficient.
     
 
 5. How do you access a key inside of an object inside of an array?
