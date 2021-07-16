@@ -32,7 +32,7 @@ Please answer the following questions below, you may edit the readme file to inc
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-    I would tell them that a variable is a way to store data. Variables are like labels for values. We store(declare) the value with a name and we can refer back to it later, we can use it to do stuff, or we can change it in certain instances. There are 3 types of variables known as var, let, and const. Var can be reassigned and redeclared and is the variable used in older versions. Let is a variable that can be reassigned but can not be redeclared and it was made to solve the issues that var posed. Const is a variable that can be neithe reassigned nor redeclared as it remains constant. It is good to use const until you can't and then use let instead. We should stay away from var. Var is function scoped while let and const are block scoped.
+    I would tell them that a variable is a way to store data. Variables are like labels for values. We store/declare the value with a name and we can refer back to it later, we can use it to do stuff, or we can change it in certain instances. There are 3 types of variables known as var, let, and const. Var can be reassigned and redeclared and is the variable used in older versions. Let is a variable that can be reassigned but can not be redeclared and it was made to solve the issues that var posed. Const is a variable that can be neithe reassigned nor redeclared as it remains constant. It is good to use const until you can't and then use let instead. We should stay away from var. Var is function scoped while let and const are block scoped.
 
 4. What is the purpose of using functions in code?
 
