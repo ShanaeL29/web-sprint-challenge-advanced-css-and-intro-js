@@ -209,13 +209,14 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-console.log("task 1:", artists[0].name);
+console.log("task 1a:", artists[0].name);
 
 //console.log("task 1:", artists[0].["name"]); //out of curiosity attempt - causes nodemon app crashed
 
 
 //(2) Bio of the third artist (2nd index) in the array 
 
+console.log("task1b:", artists[2].bio);
 
 
 
