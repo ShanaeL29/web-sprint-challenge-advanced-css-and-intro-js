@@ -214,6 +214,7 @@ console.log("task 1a:", artists[0].name);
 //console.log("task 1:", artists[0].["name"]); //out of curiosity attempt - causes nodemon app crashed
 
 
+
 //(2) Bio of the third artist (2nd index) in the array 
 
 console.log("task1b:", artists[2].bio);
@@ -224,8 +225,8 @@ console.log("task1b:", artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-// artists[8]["name"]splice(8, 'Vincent van Gogh');
-// console.log("task 2", artists);
+artists[8]["name"] = "Vincent van Gogh";
+console.log("task 2", artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -321,10 +322,16 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) {
+      newArray.push(array[i].name);
+    }
+  }
+  return newArray;
 }
 
-
+console.log(lotsOfArt(artists))
 /* ***** END OF TASKS ***** */
 
 
