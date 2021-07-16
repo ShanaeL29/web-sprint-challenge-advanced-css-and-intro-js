@@ -253,9 +253,31 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
+  // {
+  //   "id": 16,
+  //   "name": "Francisco Goya",
+  //   "years": "1746 - 1828",
+  //   "genre": "Romanticism",
+  //   "nationality": "Spanish",
+  //   "bio": "Francisco José de Goya y Lucientes (; Spanish: [fɾanˈθisko xoˈse ðe ˈɣoʝa i luˈθjentes]; 30 March 1746 – 16 April 1828) was a Spanish romantic painter and printmaker. He is considered the most important Spanish artist of the late 18th and early 19th centuries and throughout his long career was a commentator and chronicler of his era. Immensely successful in his lifetime, Goya is often referred to as both the last of the Old Masters and the first of the moderns.  He was also one of the great contemporary portraitists.He was born to a modest family in 1746 in the village of Fuendetodos in Aragon. He studied painting from age 14 under José Luzán y Martinez and moved to Madrid to study with Anton Raphael Mengs. He married Josefa Bayeu in 1773; their life was characterised by an almost constant series of pregnancies and miscarriages, and only one child, a son, survived into adulthood. Goya became a court painter to the Spanish Crown in 1786 and this early portion of his career is marked by portraits of the Spanish aristocracy and royalty, and Rococo style tapestry cartoons designed for the royal palace.",
+  //   "wikipedia": "http://en.wikipedia.org/wiki/Francisco_Goya",
+  //   "paintings": 291
+  // },
 
+  const names = [];
+  for (let i = 0; i < array.length; i++) {
+    let artist = array[i];
+    const yearOfBirth = artist.years.split(' - ')[0];
+    const yearOfDeath = artist.years.split(' - ')[1];
+    if (yearOfBirth >= 1900 && yearOfDeath <= 2000) {
+      names.push(artist.name)
+    }
+
+  }
+  return names;
 }
 
+console.log("task 4", get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -263,7 +285,7 @@ Use removeArtist to do the following:
 2. Receive a number which is the desired index in the array
 3. The function should remove an artist from the array at the index
 4. Return the length of the remaining dataset.
-
+ 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, index) {
@@ -287,7 +309,7 @@ Use addArtist to do the following:
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
 3. Return the resulting array
-
+ 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {

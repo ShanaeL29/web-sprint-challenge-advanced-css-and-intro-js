@@ -87,7 +87,7 @@ nav span{
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
+.title-container div {	/*title attribute for image added on container for accessibility*/
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
     background-position: center;	
     color: white;	
@@ -134,3 +134,7 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+/*Mobile Styles*/
+
