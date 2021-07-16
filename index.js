@@ -224,7 +224,8 @@ console.log("task1b:", artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+// artists[8]["name"]splice(8, 'Vincent van Gogh');
+// console.log("task 2", artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -250,9 +251,15 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(/**/) {
+  //names of artists who were born in and died in 20th century (1900-2000)
+  // const newArray = []
+  // for (let i = 0; i < array.length; i++) {
+  //   newArray.push(array[i].years.split(' - '));
+  // }
+  // return newArray
 }
+// console.log("task 4:", get20s(artists))
 
 
 
@@ -265,8 +272,17 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, index) {
+  //   for (let i = 0; i < array.length; i++) {
+  //     if (array[i] === index) {
+  //       array.splice(i, 1);
+  //     }
+  //   }
+  //   return array.length;
+
+  // }
+
+  // console.log(removeArtist("task 5:", artists, 5));
 }
 
 
@@ -286,20 +302,31 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  let addObject = {
+    id: 20,
+    name: "Shanae",
+    years: "1992 - current",
+    genre: "Web Design",
+    nationality: "African American",
+    bio: "klasjvo afgwog alsnoj",
+  }
+  array.push(addObject)
+  // array.splice(array.length, 0) also worked!
+  return array
 }
 
+console.log(addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
-
+ 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
+function lotsOfArt(array) {
   /*Your Code Here*/
 }
 
